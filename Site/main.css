@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.faixa{
+    width: 100%;
+    background-color:hotpink;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 15px 250px;
+    background-color: whitesmoke;
+}
+
+.nome-empresa{
+    font-size: 20px;
+    margin-left: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.barra-pesquisa{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.barra-pesquisa input{
+    padding: 10px 8px;
+    border: 2px solid #DEAFC2;
+    border-radius: 20px;
+    width: 600px;
+}
+
+.botoes-header{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+.conta,
+.carrinho{
+     padding: 10px 20px;
+     font-size: 14px;
+     border-radius: 20px;
+     border: 2px solid #DEAFC2;
+     background-color: white;
+     cursor: pointer;
+
+     display: flex;
+     align-items: center;
+     gap: 6px;
+}
+
+.btn{
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50% ;
+    border: 1px solid black;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.categorias{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 12px;
+    background-color: white;
+    border-top: 1px solid #eee;
+    font-family: 'Lucida Sans Regular';
+}
+
+.categorias a{
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.categorias a:hover{
+    color: #DEAFC2;
+}
+
+.banner-carrossel{
+    width: 100%;
+    height: 400px;
+    background-color: #A775C9;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.beneficios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    padding: 20px;
+    background-color: hotpink;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.beneficios span{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.destaques{
+    display: flex;
+    padding: 80px;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grade-produtos{
+    max-width: 1100px; 
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 30px;
+}
+
+.produto-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.produto-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /*corta imagem sem distorcer*/
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.produto-card h3{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.preco{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.add-carrinho{
+    padding: 10px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #DEAFC2;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+footer{
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    gap: 80px;
+    width: 100%;
+    height: 400px;
+    background-color: #A775C9;
+}
+
+.footer-coluna h4{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.footer-coluna p{
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+
+body{
+    font-family: monospace;
+}
+ul{
+    font-family: Helvetica;
+}
+li{
+    list-style: circle;
+}
+.list{
+    list-style: square;
+}
+
+.light-theme{
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme{
+    --bg: var(--black);
+    --fontColor:var(--white);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+.moon-theme{
+    --bg: var(--blue);
+    --fontColor:var(--green);
+}
+
+
+:root{
+    --blue: blue;
+    --cian: cyan;
+    --melon: red;
+    --gray: gray;
+    --black: #000000;
+    --white: #ffffff;
+    --green: green;
+    ;
+}
+
+*{
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body{
+    background: var(--bg);
+}
+
+.btn:focus{outline-style: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
